@@ -1,6 +1,9 @@
 import {ADD_CATS, ADD_PRODS} from "../actionTypes";
 
 //INITIAL STATE FOR REDUCER
+
+
+
 const initialState = {
     cats: [],
     prods: []
