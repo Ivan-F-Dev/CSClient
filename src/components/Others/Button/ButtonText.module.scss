@@ -1,0 +1,21 @@
+.Button {
+  height: 40px;
+
+  padding: 0 16px;
+
+  font-family: Jost;
+
+  cursor: pointer;
+
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid #77bd1b;
+  font-size: 16px;
+  transition: 0.3s;
+
+  caret-color: transparent;
+
+  &:hover {
+    background-color: #cdcdcd;
+  }
+}

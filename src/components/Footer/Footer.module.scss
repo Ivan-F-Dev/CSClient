@@ -1,0 +1,119 @@
+.Footer {
+  background-color: #f5f5f6;
+
+  .mainContainer {
+    display: flex;
+    column-gap: 14rem;
+    padding: 30px 40px;
+
+    .titleContainer {
+
+      & > *:not(:last-child) {
+        margin: 0 0 32px 0;
+      }
+      .title {
+
+        img {
+
+          width: 154px;
+          height: 96px;
+        }
+      }
+      .numbers {
+
+        .number {
+
+          &:not(:last-child) {
+            margin: 0 0 16px 0;
+          }
+
+          .numberMain {
+            font-weight: bold;
+          }
+          .numberDescription {
+
+          }
+        }
+      }
+      .icons {
+
+        .iconsTitle {
+          font-weight: bold;
+          margin: 0 0 20px 0;
+        }
+        .iconsWrapper {
+          display: flex;
+          .icon{
+            width: 30px;
+            height: 30px;
+
+            &:not(:last-child) {
+              margin: 0 16px 0 0;
+            }
+
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+
+      }
+    }
+
+    .aboutContainer {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 20px;
+
+      .aboutBlock {
+
+        &:not(:last-child) {
+          margin: 0 80px 0 0;
+        }
+
+        .aboutTitle {
+          font-weight: bold;
+
+          margin: 0 0 16px 0;
+        }
+        .aboutItems {
+
+          &:not(:last-child) {
+            margin: 0 0 12px 0;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 968px) {
+  .Footer {
+    .mainContainer {
+      column-gap: 6rem;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .Footer {
+    .mainContainer {
+      column-gap: 3rem;
+
+      .aboutContainer {
+        .aboutBlock {
+          &:not(:last-child) {
+            margin: 0 40px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 715px) {
+  .Footer {
+
+  }
+}

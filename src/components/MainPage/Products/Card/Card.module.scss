@@ -1,0 +1,72 @@
+.Card {
+  height: 400px;
+
+  display: grid;
+  //grid-template-columns: 1fr 40px;
+  //grid-template-rows: 7fr 2fr 1fr;
+  //grid-template-areas:  "pht ico"
+  //                          "dsc ico"
+  //                          "prc ico";
+  grid-template-columns: 250px 40px;
+  grid-template-rows: 275px 75px 45px;
+  grid-template-areas:  "pht ico"
+                            "dsc ico"
+                            "prc ico";
+  .photo{
+    grid-area: pht;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  .description{
+    grid-area: dsc;
+
+    padding: 10px 5px 10px 30px;
+
+    font-size: 18px;
+  }
+  .price {
+    grid-area: prc;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 5px 5px 10px 30px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+
+  }
+  .icons{
+    grid-area: ico;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .topIcons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      svg {
+        padding-bottom: 10px;
+      }
+    }
+    .bottomIcon {
+      width: 40px;
+      height: 40px;
+
+      background-color: #77bd1b;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.Products {
+  display: flex;
+  justify-content: center;
+  .mainContainer {
+    margin: 0 40px;
+    .productsWrapper {
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 715px) {
+  .Products {
+    .mainContainer {
+      .productsWrapper {
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.HeaderButton {
+  height: 38px;
+  width: 38px;
+
+  padding: 11px 0;
+  &:not(:last-child) {
+    margin: 0 1rem 0 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+}

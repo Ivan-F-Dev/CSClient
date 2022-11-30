@@ -1,0 +1,77 @@
+.links {
+
+  max-height: 43.2px;
+  overflow: hidden;
+  //height: 0;
+  //overflow: hidden;
+
+  display: flex;
+
+  .linkWrapper {
+    padding: 10px 0 10px 0;
+
+    &:not(:last-child) {
+      margin: 0 4rem 0 0;
+    }
+
+    .link {
+      transition: 200ms;
+      cursor: pointer;
+      white-space: nowrap;
+
+      &:hover {
+        color: #77bd1b;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .links {
+    .linkWrapper{
+      &:not(:last-child) {
+        margin: 0 3rem 0 0;
+      }
+      .link {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .links {
+    .linkWrapper{
+      &:not(:last-child) {
+        margin: 0 1rem 0 0;
+      }
+      .link {
+        font-size: 11px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .links {
+    .linkWrapper{
+      &:not(:last-child) {
+        margin: 0 1rem 0 0;
+      }
+      .link {
+        font-size: 11px;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .links {
+    .linkWrapper{
+      &:not(:last-child) {
+        margin: 0 1rem 0 0;
+      }
+      .link {
+        font-size: 10px;
+      }
+    }
+  }
+}
