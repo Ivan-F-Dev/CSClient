@@ -1,9 +1,11 @@
 // import ReactDOM from 'react-dom';//для старой версии
 import React from 'react';
+import {Provider} from "react-redux";
+import {BrowserRouter} from 'react-router-dom'
+import {store} from "./store/store";
 import {createRoot} from 'react-dom/client'
 //import {ThemeProvider, createTheme} from '@material-ui/core';
-import {Provider} from "react-redux";
-import {store} from "./store/store";
+
 import App from './App';
 
 // const theme = createTheme({
@@ -19,14 +21,15 @@ import App from './App';
 
 const root = createRoot(document.getElementById('root')as HTMLElement)
 root.render(
-    <React.StrictMode>
-        <Provider store={store}>
+    //<React.StrictMode>
+        <Provider store={store} >
             {/*<ThemeProvider theme={theme}>*/}
-            {/*    */}
             {/*</ThemeProvider>*/}
-            <App />
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
         </Provider>
-    </React.StrictMode>
+    //</React.StrictMode>
 )
 
 // Вмонтирование в root старой версии

@@ -1,5 +1,12 @@
 .Footer {
+  //position: absolute;
+  //top:0;
+  //bottom: -408px;
+  //right: 0;
+  //left: 0;
+  align-self: flex-end;
   background-color: #f5f5f6;
+  caret-color: #f5f5f6;
 
   .mainContainer {
     display: flex;

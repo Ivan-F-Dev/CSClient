@@ -1,0 +1,17 @@
+.CompareLine {
+  //max-width: 330px;
+
+
+  .title {
+    padding-top: 24px;
+    color: #999999;
+  }
+  .columnsWrapper {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &:not(:last-child) {
+    border-bottom:1px solid #ededed;
+  }
+}

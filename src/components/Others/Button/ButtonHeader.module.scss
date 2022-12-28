@@ -1,0 +1,85 @@
+.ButtonHeader {
+
+  padding: 5px;
+
+  max-height: 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  caret-color: transparent;
+
+  img {
+    height: 36px;
+    width: 36px;
+
+  }
+
+  .text {
+
+    padding: 0px;//0 16px;
+    margin: 0;
+    line-height: 8px;
+
+    font-family: Jost;
+
+  }
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .ButtonHeader {
+    img {
+      height: 36px;
+      width: 36px;
+
+    }
+    .text {
+      font-size: 13px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .ButtonHeader {
+    img {
+      height: 36px;
+      width: 36px;
+
+    }
+    .text {
+      display: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .ButtonHeader {
+    img {
+      height: 36px;
+      width: 36px;
+
+    }
+    .text {
+      //font-size: ;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .ButtonHeader {
+    img {
+      height: 36px;
+      width: 36px;
+
+    }
+    .text {
+      //font-size: ;
+    }
+  }
+}

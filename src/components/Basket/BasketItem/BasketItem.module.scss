@@ -1,0 +1,163 @@
+.BasketItem {
+  padding: 20px 0 20px 0;
+  margin-right: 40px;
+
+  display: flex;
+  caret-color: white;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #ededed;
+  }
+
+  .wrapperLink {
+    display: contents;
+    color: black;
+    text-decoration: none;
+    .photoWrapper {
+      height: 200px;
+      width: 200px;
+
+      min-width: 150px;
+      margin: 0 10px 0 0;
+
+      .photo {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .info {
+    max-width: 600px;
+
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .memory {
+      font-size: 18px;
+    }
+    .deleteBtn {
+      width: fit-content;
+      margin-top: 20px;
+      padding: 3px;
+
+      display: flex;
+      font-size: 18px;
+      color: #999999;
+      border-radius: 5px;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ededed;
+        caret-color: #ededed;
+      }
+
+      .deleteIcon {
+        width: 26px;
+        height: 26px;
+        padding-right: 6px;
+      }
+    }
+  }
+  .panel {
+    margin-left: auto;
+    min-width: 140px;
+
+    .price {
+      font-size: 22px;
+      font-weight: 500;
+    }
+    .counter {
+      padding-top: 40px;
+      width: fit-content;
+      display: flex;
+      .setBtn {
+        width: 33.2px;
+        height: 33.2px;
+        border: 2px solid #ededed;
+        font-size: 30px;
+        line-height: 28px;
+        text-align: center;
+        color: #949494;
+        font-weight: 300;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          background-color: #ededed;
+          caret-color: #ededed;
+        }
+      }
+      .count {
+        padding: 5px 20px;
+
+        border: 2px solid #ededed;
+        background-color: #ededed;
+        caret-color: #ededed;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .BasketItem {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .BasketItem {
+    margin-right: 0;
+    .info {
+      max-width: 600px;
+      .title {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    .panel {
+      .price {
+        font-size: 20px;
+      }
+    }
+  }
+
+}
+@media (max-width: 576px) {
+  .BasketItem {
+    margin-right: 0;
+    .photoWrapper {
+      min-width: 120px;
+    }
+    .info {
+      max-width: 600px;
+      .title {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    .panel {
+      min-width: 110px;
+      .price {
+        font-size: 16px;
+      }
+      .counter {
+        height: 30px;
+        padding-top: 15px;
+        .setBtn {
+          width: 26px;
+          height: 26px;
+          font-size: 20px;
+          line-height: 23px;
+        }
+        .count {
+          padding: 5px 14px;
+          height: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
