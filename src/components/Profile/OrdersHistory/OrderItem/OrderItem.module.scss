@@ -1,0 +1,36 @@
+.OrderItem {
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid #cccccc;
+
+  .column {
+    padding: 10px 16px;
+    width: 25%;
+
+    .id {
+      color: #85D325;
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .OrderItem {
+    .column {
+      padding: 10px 10px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .OrderItem {
+    .column {
+      padding: 10px 6px;
+    }
+  }
+}

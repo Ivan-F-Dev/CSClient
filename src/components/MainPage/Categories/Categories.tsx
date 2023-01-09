@@ -6,7 +6,7 @@ import {changeCatAction} from "../../../store/actionCreators";
 
 interface CategoriesProps {
     cats:Array<CategoryEntity>
-    setCurCat: (newCat: CategoriesNameEnum) => undefined
+    setCurCat: (newCat: CategoriesNameEnum) => void//undefined
 }
 
 const Categories:FC<CategoriesProps> = ({cats,setCurCat}) => {

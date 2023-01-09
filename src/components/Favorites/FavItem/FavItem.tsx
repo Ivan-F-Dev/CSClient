@@ -37,9 +37,11 @@ const FavItem:FC<FavItemProps> = ({product}) => {
 
     return (
         <div className={s.FavItem}>
-            <div className={s.photo}>
-                <img src={"http://localhost:3000/images/products/" + product.img + ".png"} alt=""/>
-            </div>
+            <Link className={s.wrapperLink} to={`/product/${product.id}/${product.category}`}>
+                <div className={s.photo}>
+                    <img src={"http://localhost:3000/images/products/" + product.img + ".png"} alt=""/>
+                </div>
+            </Link>
             <div className={s.description}>{product.producer} {product.model}</div>
             <div className={s.price}>{product.price} ₽</div>
             <div className={s.icons}>

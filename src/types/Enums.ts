@@ -2,6 +2,17 @@ export enum RolesEnum {
     USER='USER',
     ADMIN='ADMIN'
 }
+
+// export enum ProdPrefixEnum {
+//     videoCameras='vc',
+//     gameStations='gs',
+//     televisors='tv',
+//     pads='pd',
+//     laptops='lt',
+//     photoVideo='pv',
+//     smartphones='ph'
+// }
+
 export enum CategoriesNameEnum {
     videoCameras='videoCameras',
     gameStations='gameStations',

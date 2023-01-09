@@ -3,13 +3,15 @@ import {
     ADD_PRODS,
     CHANGE_CAT,
     SET_FAVORITE,
-    SET_IS_AUTH,
+    SET_IS_AUTH, SET_ORDERS,
+    SET_PROD,
     SET_TO_BASKET,
     SET_TO_COMPARE,
+    SET_USER,
     WAITING_OFF,
     WAITING_ON
 } from "./actionTypes";
-import {CategoryEntity, ProductEntityClient} from "../types/Entities";
+import {CategoryEntity, OrderEntity, ProductEntityClient, UserEntity} from "../types/Entities";
 import {CategoriesNameEnum} from "../types/Enums";
 
 //mainPageReducer
@@ -47,12 +49,32 @@ export type addProdsAction = {
 }
 export const addProds = (payload:Array<ProductEntityClient>):addProdsAction => ({type: ADD_PRODS, payload: payload})
 
+export type setProdAction = {
+    type: typeof SET_PROD
+    id: string
+    category: CategoriesNameEnum
+    actualCount:number
+}
+export const setProd = (id:string,category:CategoriesNameEnum,actualCount:number):setProdAction => ({type: SET_PROD, id,category,actualCount})
+
 export type addCatsAction = {
     type: typeof ADD_CATS
     payload: Array<CategoryEntity>
 }
 export const addCats = (payload:Array<CategoryEntity>):addCatsAction => ({type: ADD_CATS, payload: payload})
 //authPageReducer
+export type setOrdersAction = {
+    type: typeof SET_ORDERS
+    payload: Array<OrderEntity>
+}
+export const setOrders = (payload:Array<OrderEntity>):setOrdersAction => ({type:SET_ORDERS,payload:payload})
+
+export type setUserAction = {
+    type: typeof SET_USER
+    payload: UserEntity|null
+}
+export const setUser = (payload:UserEntity|null):setUserAction => ({type:SET_USER,payload})
+
 export type setIsAuthAction = {
     type: typeof SET_IS_AUTH
     payload:boolean

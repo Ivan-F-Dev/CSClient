@@ -1,18 +1,25 @@
 import axios from "axios";
 import {CategoriesNameEnum} from "../types/Enums";
-import {CategoryEntity, ProductEntity} from "../types/Entities";
+import {CategoryEntity, OrderEntity, OrderItem, ProductEntity, UserEntity} from "../types/Entities";
 import {payloadForLog, payloadForReg} from "../types/Payload";
+import {log} from "util";
 
-const instance = axios.create({
-    //withCredentials: true,
-    baseURL: 'http://localhost:3000/',
-    headers: {
-        Authorization: localStorage.token
-    },
-    validateStatus: (status) => {
-        return true//status < 500;
-    }
-});
+
+
+const getInstance = () => {
+
+    const instance = axios.create({
+        //withCredentials: true,
+        baseURL: 'http://localhost:3000/',
+        headers: {
+            Authorization: Object.hasOwn(localStorage,'auth')? JSON.parse(localStorage.auth).token : undefined
+        },
+        validateStatus: (status) => {
+            return true//status < 500;
+        }
+    });
+    return instance
+}
 
 export type Payload = {
     prods: Array<ProductEntity>
@@ -30,6 +37,9 @@ export type TError = {
 export const API = {
     loadMainPage: async (catName:CategoriesNameEnum = CategoriesNameEnum.smartphones):Promise<Payload | TError> => {
 
+        const instance = getInstance()
+
+
         let prods = await instance.get<Array<ProductEntity> | TError>(`products?category=${catName}`)
         let cats = await instance.get<Array<CategoryEntity> | TError>("categories")
 
@@ -38,12 +48,35 @@ export const API = {
         return {prods:prods.data,cats:cats.data} as Payload
     },
     login: async (payload:payloadForLog|payloadForReg) => {
-        const res = await instance.post(`auth/login`, payload)
+        const instance = getInstance()
+
+        type expectedData = {
+            message:string
+            token:string
+            user: UserEntity
+        }
+
+        const res = await instance.post<expectedData>(`auth/login`, payload)
+        console.log("LOGIN",res.data)
         return res
     },
     registration: async (payload:payloadForLog|payloadForReg) => {
-        const res = await instance.post("auth/registration",payload)
+        const instance = getInstance()
+        type expectedData = {
+            message:string
+            newUser: UserEntity
+        }
+        const res = await instance.post<expectedData>("auth/registration",payload)
+        return res
+    },
+    buy: async (payload: { order:Array<OrderItem> }) => {
+        const instance = getInstance()
+        const res = await instance.post("products",payload)
+        return res
+    },
+    getUserOrders: async (id:string|number) => {
+        const instance = getInstance()
+        const res = await instance.get<Array<OrderEntity>>(`orders?id=${id}`)
         return res
     }
-
 }

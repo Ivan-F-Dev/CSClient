@@ -3,13 +3,21 @@ import s from './Auth.module.scss'
 import ButtonFill from "../Others/Button/ButtonFill";
 import Input from "../Others/Input/Input";
 import ButtonText from "../Others/Button/ButtonText";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {Dispatch} from "redux";
 import {TCAuthLog, TCAuthReg} from "../../store/thunkCreators";
+import {Navigate,useNavigate} from "react-router-dom";
+import {Store} from "../../store/store";
 
 const Auth = () => {
 
+
+
+    const navigate = useNavigate()
     const dispatch = useDispatch<Dispatch<any>>()
+    const auth = useSelector((state:Store) => state.auth)
+    if (auth.isAuth) navigate("/profile/contactData")
+
     //state
     const [mode,setMode] = useState(true)//log-true or reg-false
     const [login, setLogin] = useState('')
@@ -31,6 +39,8 @@ const Auth = () => {
         await dispatch(TCAuthLog({login,password}))
     }
 
+
+
     return (
         <div className={s.Auth}>
             <div className={s.mainContainer}>
@@ -45,7 +55,7 @@ const Auth = () => {
                         <Input type="password" value={password} setValue={setPassword} title="Пароль"/>
                         <Input value={name} setValue={setName}  title="Имя"/>
                         <Input value={surname} setValue={setSurname}  title="Фамилия"/>
-                        <Input value={dateOfBirth} setValue={setDateOfBirth}  title="Дата рождения"/>
+                        <Input type="date" value={dateOfBirth} setValue={setDateOfBirth}  title="Дата рождения"/>
                     </div>}
                 <div className={s.buttonsWrapper}>
                     {mode ? <ButtonFill callback={onLog} text='Войти'/> : <ButtonFill callback={onReg} text='Зарегистрироваться'/>}

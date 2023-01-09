@@ -5,6 +5,8 @@ export type UserEntity = {
     name: string
     surname: string
     dateOfBirth: string
+    phoneNumber: string
+    email: string
     login: string
     password: string
     roles: Array<string>
@@ -15,12 +17,21 @@ export type CategoryEntity = {
     categoryName: CategoriesNameEnum
     prefix: string
 }
+
 export type OrderEntity = {
-    id: string
-    clientId: string
-    prodsId: string
+    id: number
+    clientId: number
+    prods: Array<OrderItem>
     date: string
 }
+export type OrderItem = {
+    id: string
+    buyCount: number
+}
+
+
+
+
 export interface ProductEntity  {
     id: string
     category: CategoriesNameEnum

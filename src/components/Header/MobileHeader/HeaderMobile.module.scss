@@ -4,7 +4,7 @@
   .container {
 
 
-    padding: 0 40px;
+    padding: 0 40px 10px 40px;
 
     .topBox {
       height: 60px;
@@ -15,7 +15,12 @@
       .ButtonsWrapper {
         display: flex;
 
-
+        .link {
+          //position: relative;
+          display: contents;
+          color: black;
+          text-decoration: none;
+        }
       }
       .titleWrapper {
         height: 60px;
@@ -66,7 +71,9 @@
     }
 
     .bottomBox{
-
+      //
+      display: none;
+      //
 
 
       &::before {

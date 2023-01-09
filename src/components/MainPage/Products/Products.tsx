@@ -1,14 +1,9 @@
 import React, {FC} from 'react'
 import s from './Products.module.scss'
 import Card from "./Card/Card";
-import {ProductEntity, ProductEntityClient} from "../../../types/Entities";
-import {Link} from "react-router-dom";
+import {ProductEntityClient} from "../../../types/Entities";
 import {CategoriesNameEnum} from "../../../types/Enums";
 
-// interface ProductsProps {
-//     prods:Array<ProductEntity>
-//     curCat: CategoriesNameEnum
-// }
 interface ProductsProps {
     prods:Record<CategoriesNameEnum, Array<ProductEntityClient>>
     curCat: CategoriesNameEnum
@@ -25,8 +20,6 @@ enum CategoriesNameEnumRu {
 }
 
 const Products:FC<ProductsProps> = ({prods,curCat}) => {
-
-    //console.log('Products')
 
     return (
         <div className={s.Products}>

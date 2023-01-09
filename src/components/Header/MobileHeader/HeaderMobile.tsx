@@ -1,33 +1,46 @@
 import React, {FC, useState} from "react";
 import s from "./HeaderMobile.module.scss";
-import HeaderLinks from "../HeaderLinks/HeaderLinks";
 import img from "./../../../imgs/titleFine.png";
 import menuIco from "./../../../assets/images/menu_ico.svg";
 import HeaderButton from "./HeaderButton/HeaderButton";
 import InputHeader from "../../Others/Input/InputHeader";
 import {Link} from "react-router-dom";
+import Hint from "../../Others/Hint/Hint";
+import {useSelector} from "react-redux";
+import {Store} from "../../../store/store";
 
 const HeaderMobile:FC = () => {
 
-    const [links, setLinks] = useState(['Смартфоны и планшеты','Ноутбуки, планшеты и компьютеры','Техника для дома','Игры и развлечения','Фото и видеотехника'])
+    const auth = useSelector((state:Store)=> state.auth.isAuth)
+    const mainPage = useSelector((state:Store)=> state.mainPage)
     const [input,setInput] = useState('')
-
 
     return (
         <header className={s.Header}>
             <div className={s.container}>
                 <div className={s.topBox}>
                     <div className={s.ButtonsWrapper}>
-                        <HeaderButton path='person'/>
-                        <HeaderButton path='bar_chart'/>
+                        <Link className={s.link} to="/profile/contactData">
+                            <Hint radius={8} boolType={true} max={1} right={3} top={3} children={auth?1:2}/>
+                            <HeaderButton path='person'/>
+                        </Link>
+                        <Link className={s.link} to="/compare">
+                            <Hint max={4} right={3} top={3} children={mainPage.countOfCompareProds}/>
+                            <HeaderButton path='bar_chart'/>
+                        </Link>
                     </div>
                     <Link style={{display:"contents"}} to='/'>
                         <div className={s.titleWrapper}></div>
                     </Link>
-
                     <div className={s.ButtonsWrapper}>
-                        <HeaderButton path='favorite'/>
-                        <HeaderButton path='shopping_cart'/>
+                        <Link className={s.link} to="/favorites">
+                            <Hint right={3} top={3} children={mainPage.countOfFavoriteProds}/>
+                            <HeaderButton path='favorite'/>
+                        </Link>
+                        <Link className={s.link} to="/basket">
+                            <Hint right={3} top={3} children={mainPage.countOfBasketProds}/>
+                            <HeaderButton path='shopping_cart'/>
+                        </Link>
                     </div>
                 </div>
                 <div className={s.middleBox}>
@@ -36,14 +49,14 @@ const HeaderMobile:FC = () => {
                     </div>
                     <InputHeader width="calc(100% - 36px)" value={input} setValue={setInput}/>
                 </div>
-                {links.length > 0
-                    ? (
-                        <div className={s.bottomBox}>
-                            <HeaderLinks links={links}/>
-                        </div>
-                    )
-                    : null
-                }
+                {/*{links.length > 0*/}
+                {/*    ? (*/}
+                {/*        <div className={s.bottomBox}>*/}
+                {/*            <HeaderLinks links={links}/>*/}
+                {/*        </div>*/}
+                {/*    )*/}
+                {/*    : null*/}
+                {/*}*/}
             </div>
         </header>
     );

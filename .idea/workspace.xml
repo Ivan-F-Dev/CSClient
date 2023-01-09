@@ -10,128 +10,60 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cdfca2c-3953-42c5-a04e-d5c5bebb15aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/arrow_left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/arrow_right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/delete.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/сross_white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/bar_chartGreen.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/favorite_fill.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/shopping_cartWhite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/tune.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Basket/Basket.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Basket/Basket.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Basket/BasketItem/BasketItem.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Basket/BasketItem/BasketItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Compare/Compare.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Compare/Compare.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Compare/CompareItem/CompareItem.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Compare/CompareItem/CompareItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Compare/CompareLine/Column/Column.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Compare/CompareLine/Column/Column.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Compare/CompareLine/CompareLine.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Compare/CompareLine/CompareLine.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Favorites/FavItem/FavItem.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Favorites/FavItem/FavItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Favorites/Favorites.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Favorites/Favorites.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Others/Button/ButtonHeader.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Others/Button/ButtonHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Others/Hooks/useSizeElement.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Others/Input/Input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Others/Input/InputHeader.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Others/Input/InputHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Product/Product.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Product/Product.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actionCreators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/thunkCreators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/Entities.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/Enums.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/Payload.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/Redux.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/API.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/evaluateAmountOfProperties.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/getProdsFor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/getProductTitle.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/priceHandlers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/renderNeededCharacteristics.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/throttle.ts" afterDir="false" />
+    <list default="true" id="5cdfca2c-3953-42c5-a04e-d5c5bebb15aa" name="Default Changelist" comment="fixed">
+      <change afterPath="$PROJECT_DIR$/src/components/Others/Hint/Hint.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Others/Hint/Hint.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Others/Hooks/useSlider.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Others/Hooks/useViewMode.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Others/Modal/Modal.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Others/Modal/Modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ConfirmExit/ConfirmExit.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ConfirmExit/ConfirmExit.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ContactData/ContactData.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ContactData/ContactData.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/OrdersHistory/OrderItem/OrderItem.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/OrdersHistory/OrderItem/OrderItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/OrdersHistory/OrdersHistory.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/OrdersHistory/OrdersHistory.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/API.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Auth/Auth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/Auth.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Auth/Auth.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/Auth.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterMobile/FooterMobile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/FooterMobile/FooterMobile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterMobile/FooterMobile.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/FooterMobile/FooterMobile.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/Auth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Basket/Basket.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/Basket.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Basket/Basket.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/Basket.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Basket/BasketItem/BasketItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/BasketItem/BasketItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Compare/Compare.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Compare/Compare.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Compare/Compare.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Compare/Compare.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Favorites/FavItem/FavItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Favorites/FavItem/FavItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Favorites/FavItem/FavItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Favorites/FavItem/FavItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Favorites/Favorites.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Favorites/Favorites.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Favorites/Favorites.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Favorites/Favorites.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderLinks/HeaderLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderLinks/HeaderLinks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/MUIMenu/MUIMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/MUIMenu/MUIMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/MobileHeader/HeaderButton/HeaderButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/MobileHeader/HeaderButton/HeaderButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/MobileHeader/HeaderMobile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/MobileHeader/HeaderMobile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderLinks/HeaderLinks.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderLinks/HeaderLinks.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderLinks/HeaderLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderLinks/HeaderLinks.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/MobileHeader/HeaderMobile.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/MobileHeader/HeaderMobile.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage/Categories/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Categories/Categories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage/Categories/Categories.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Categories/Categories.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/MainPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage/Products/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Products/Card/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage/Products/Card/Card.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Products/Card/Card.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage/Products/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Products/Products.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/MobileHeader/HeaderMobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/MobileHeader/HeaderMobile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainPage/Categories/Categories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Categories/Categories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainPage/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/MainPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainPage/Products/Products.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Products/Products.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Others/Button/ButtonFill.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/Button/ButtonFill.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Others/Button/ButtonText.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/Button/ButtonText.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Others/Input/Input.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-Black.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-Black.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-Black.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-Black.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-Black.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-Light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-Light.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-Light.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-Light.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-Light.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-Medium.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-Medium.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-Medium.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-Medium.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-SemiBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-SemiBold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-SemiBold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/jost/Jost-SemiBold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/jost/Jost-SemiBold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/bar_chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/bar_chart.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/cats/laptop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/cats/photo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/cats/ps.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/cats/tech.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/cats/tv.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/cats/washingMachine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/favorite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/favorite.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/foot_class.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/foot_class.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/foot_star.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/foot_star.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/foot_vk.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/foot_vk.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/foot_yt.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/foot_yt.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/menu_ico.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/menu_ico.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/person.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/person.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/prods/galaxya12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/prods/galaxya31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/prods/galaxya51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/prods/galaxys21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/prods/mi10t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/prods/nokia34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/prods/redmi9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/shevup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/shevup.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/shopping_car.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/shopping_cart.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imgs/titleFine.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/titleFine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actionCreators.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actionTypes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/authReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainPage/Products/Products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Products/Products.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Others/Hooks/useSizeElement.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Others/Input/Input.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/Input/Input.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Others/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/Input/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actionCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actionCreators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actionTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actionTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/authReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/authReducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/mainPageReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/mainPageReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/thunkCreators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/thunkCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/thunkCreators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/Entities.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Entities.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/Enums.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Enums.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/API.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/API.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/getProdsFor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/getProds.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/priceHandlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/priceHandlers.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,9 +74,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
         <option value="SCSS File" />
-        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -162,6 +94,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.splitter.proportion" value="0.20266889" />
     <property name="ts.external.directory.path" value="C:\Users\Home\projects\cs2_client_ts\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -172,11 +106,11 @@
       <recent name="C:\Users\Home\projects\cs2_client_ts\src\types" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Home\projects\cs2_client_ts\src\assets\icons" />
-      <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Compare\CompareLine\Column" />
-      <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Compare\CompareLine" />
-      <recent name="C:\Users\Home\projects\cs2_client_ts\src\assets\images" />
-      <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Product" />
+      <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Others\Modal" />
+      <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Others\Hint" />
+      <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Profile\ConfirmExit" />
+      <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Profile\OrdersHistory" />
+      <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Profile" />
     </key>
   </component>
   <component name="RunManager">
@@ -197,6 +131,11 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="Unnamed" created="1673074286540" text="redirect" recursive="true" caseInsensitive="false" type="TypeScript" scope_type="PROJECT" scope_descriptor="" history="1">
+      <constraint name="__context__" within="" contains="" />
+    </searchConfiguration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5cdfca2c-3953-42c5-a04e-d5c5bebb15aa" name="Default Changelist" comment="" />
@@ -230,8 +169,27 @@
       <workItem from="1671709730647" duration="2874000" />
       <workItem from="1671775752495" duration="1952000" />
       <workItem from="1671799389050" duration="9216000" />
-      <workItem from="1672222665524" duration="620000" />
+      <workItem from="1672222665524" duration="12546000" />
+      <workItem from="1672298039067" duration="23126000" />
+      <workItem from="1672383136284" duration="17684000" />
+      <workItem from="1672565964281" duration="676000" />
+      <workItem from="1672573614451" duration="2035000" />
+      <workItem from="1672643323741" duration="19780000" />
+      <workItem from="1672738928451" duration="7569000" />
+      <workItem from="1673066619498" duration="2518000" />
+      <workItem from="1673072271041" duration="8646000" />
+      <workItem from="1673104761103" duration="3158000" />
+      <workItem from="1673155196743" duration="17251000" />
+      <workItem from="1673245014867" duration="7857000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed">
+      <created>1672223593681</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672223593681</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +207,15 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="601" y="245" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1672389676194">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="601" y="245" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1536.834@0.0.1536.834" timestamp="1672389676194" />
     <state x="520" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1670401043031">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -258,26 +224,38 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1669912543752" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1671811416645">
+    <state x="297" y="242" width="941" height="349" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1673074286525">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1671811416645" />
-    <state width="1515" height="129" key="GridCell.Tab.0.bottom" timestamp="1672222845614">
+    <state x="297" y="242" width="941" height="349" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1536.834@0.0.1536.834" timestamp="1673074286525" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1672739011902">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="129" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1672222845614" />
-    <state width="1515" height="129" key="GridCell.Tab.0.center" timestamp="1672222845613">
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1672739011902" />
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1673245213812">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="129" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1672222845613" />
-    <state width="1515" height="129" key="GridCell.Tab.0.left" timestamp="1672222845613">
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1673245213812" />
+    <state width="1515" height="213" key="GridCell.Tab.0.center" timestamp="1673245213812">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="129" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1672222845613" />
-    <state width="1515" height="129" key="GridCell.Tab.0.right" timestamp="1672222845614">
+    <state width="1515" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1673245213812" />
+    <state width="1515" height="213" key="GridCell.Tab.0.left" timestamp="1673245213812">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="129" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1672222845614" />
+    <state width="1515" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1673245213812" />
+    <state width="1515" height="213" key="GridCell.Tab.0.right" timestamp="1673245213812">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1673245213812" />
+    <state x="277" y="62" width="1214" height="707" key="SettingsEditor" timestamp="1672744894946">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="62" width="1214" height="707" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1672744894946" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1672223750327">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1672223750327" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1670232798930">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

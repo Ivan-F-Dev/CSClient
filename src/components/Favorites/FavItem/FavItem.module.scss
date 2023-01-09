@@ -7,15 +7,20 @@
     grid-template-areas:  "pht ico"
                           "dsc ico"
                           "prc ico";
-  .photo {
-    grid-area: pht;
+  .wrapperLink {
+    display: contents;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+    .photo {
+      grid-area: pht;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
+
   .description {
     grid-area: dsc;
     padding: 10px 0;

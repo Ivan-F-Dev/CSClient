@@ -1,0 +1,78 @@
+.OrdersHistory {
+
+  caret-color: black;
+
+  .title {
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .orders {
+
+    border-radius: 2px;
+    border: 1px solid #cccccc;
+    //border-collapse: unset;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+
+      color: #747474;
+      opacity: 0.75;
+      .column {
+        padding: 16px;
+        width: 25%;
+      }
+    }
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+      padding: 16px 16px 16px 16px;
+
+      border-top: 1px solid #cccccc;
+
+      b{
+        padding-left: 10px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .OrdersHistory {
+    .title {
+
+    }
+    .orders {
+      font-size: 14px;
+      .header {
+        .column {
+          padding: 10px;
+        }
+      }
+      .footer {
+
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .OrdersHistory {
+    .title {
+
+    }
+    .orders {
+      font-size: 13px;
+      .header {
+        .column {
+          padding: 6px;
+        }
+      }
+      .footer {
+
+      }
+    }
+  }
+}
