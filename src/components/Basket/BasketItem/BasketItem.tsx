@@ -1,5 +1,6 @@
-import React, {FC, useState} from "react";
+import React, {FC} from "react";
 import s from "./BasketItem.module.scss";
+import config from "../../../config.json"
 import deleteIcon from '../../../assets/icons/delete.svg'
 import {ProductEntityClient} from "../../../types/Entities";
 import {getProductTitle} from "../../../utils/getProductTitle";
@@ -40,7 +41,7 @@ const BasketItem:FC<BasketItemProps> = ({product,orderItem,setOrder,deleteOrder}
         <div className={s.BasketItem}>
             <Link className={s.wrapperLink} to={`/product/${product.id}/${product.category}`}>
                 <div className={s.photoWrapper}>
-                    <img className={s.photo} src={"http://localhost:3000/images/products/" + product.img + ".png"} alt="img"/>
+                    <img className={s.photo} src={config.mainUrl + "images/products/" + product.img + ".png"} alt="img"/>
                 </div>
             </Link>
             <div className={s.info}>

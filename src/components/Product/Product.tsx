@@ -1,15 +1,14 @@
 import React, {FC, RefObject, useLayoutEffect, useRef, useState} from "react";
-import s from "./Product.module.scss"
+import s from "./Product.module.scss";
+import config from "../../config.json"
 import { useParams } from "react-router-dom";
 import favoriteFill from "../../assets/images/favorite_fill.svg";
 import favorite from "../../assets/images/favorite.svg";
 import barChartGreen from "../../assets/images/bar_chartGreen.svg";
 import barChart from "../../assets/images/bar_chart.svg";
 import Cart from "../../assets/images/shopping_cartWhite.svg";
-import Tune from "../../assets/images/tune.svg";
 import {useDispatch, useSelector} from "react-redux";
 import {Store} from "../../store/store";
-import {ProductEntity} from "../../types/Entities";
 import {priceHandlers} from "../../utils/priceHandlers";
 import {getProductTitle} from "../../utils/getProductTitle";
 import {renderNeededCharacteristics} from "../../utils/renderNeededCharacteristics";
@@ -88,7 +87,7 @@ const Product:FC<ProductProps> = ({scroll}) => {
                 </div>
                 <div className={s.mainContent}>
                     <div className={s.photo}>
-                        <img src={"http://localhost:3000/images/products/" + product.img + ".png"} alt=""/>
+                        <img src={config.mainUrl + "images/products/" + product.img + ".png"} alt=""/>
                     </div>
                     <div className={s.info}>
                         {product.rom

@@ -1,5 +1,6 @@
 import React, {FC} from "react";
 import s from './CompareItem.module.scss'
+import config from "../../../config.json"
 import {ProductEntityClient} from "../../../types/Entities";
 import {getProductTitle} from "../../../utils/getProductTitle";
 import deleteIcon from "../../../assets/icons/delete.svg"
@@ -24,7 +25,7 @@ const CompareItem:FC<CompareItemProps> = ({product}) => {
         <div className={s.CompareItem}>
             <Link className={s.wrapperLink} to={`/product/${product.id}/${product.category}`}>
                 <div className={s.photoWrapper}>
-                    <img src={`http://localhost:3000/images/products/${product.img}.png`} alt="" className={s.photo}/>
+                    <img src={config.mainUrl + `images/products/${product.img}.png`} alt="" className={s.photo}/>
                 </div>
             </Link>
             <div className={s.title}>{`${getProductTitle(product.category)} ${product.producer} ${product.model}`}</div>

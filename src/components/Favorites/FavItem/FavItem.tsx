@@ -1,5 +1,6 @@
 import React, {FC} from "react";
 import s from './FavItem.module.scss'
+import config from "../../../config.json"
 import {Link} from "react-router-dom";
 import favoriteFill from "../../../assets/images/favorite_fill.svg";
 import favorite from "../../../assets/images/favorite.svg";
@@ -39,7 +40,7 @@ const FavItem:FC<FavItemProps> = ({product}) => {
         <div className={s.FavItem}>
             <Link className={s.wrapperLink} to={`/product/${product.id}/${product.category}`}>
                 <div className={s.photo}>
-                    <img src={"http://localhost:3000/images/products/" + product.img + ".png"} alt=""/>
+                    <img src={config.mainUrl + "images/products/" + product.img + ".png"} alt=""/>
                 </div>
             </Link>
             <div className={s.description}>{product.producer} {product.model}</div>

@@ -1,7 +1,7 @@
-import React, {FC, useState} from "react";
+import React, {FC} from "react";
 import s from "./Card.module.scss";
+import config from '../../../../config.json'
 import {Link} from "react-router-dom";
-
 import {ProductEntityClient} from "../../../../types/Entities";
 import cross_white from '../../../../assets/icons/сross_white.svg'
 import favoriteFill from "../../../../assets/images/favorite_fill.svg"
@@ -11,13 +11,11 @@ import barChart from "../../../../assets/images/bar_chart.svg"
 import barChartGreen from "../../../../assets/images/bar_chartGreen.svg"
 import {useDispatch} from "react-redux";
 import {Dispatch} from "redux";
-import {CategoriesNameEnum} from "../../../../types/Enums";
 import {setFavorite, setToBasket, setToCompare} from "../../../../store/actionCreators";
 
 
 interface CardProps {
     product:ProductEntityClient
-    //curCat: CategoriesNameEnum
 }
 
 const iconSize = {
@@ -46,7 +44,8 @@ const Card:FC<CardProps> = ({product}) => {
         <div key={product.id} className={s.Card}>
             <Link className={s.wrapperLink} to={`/product/${product.id}/${product.category}`}>
                 <div className={s.photo}>
-                    <img src={"http://localhost:3000/images/products/" + product.img + ".png"} alt=""/>
+                    {/*<img src={"http://localhost:3000/images/products/" + product.img + ".png"} alt=""/>*/}
+                    <img src={config.mainUrl + "images/products/" + product.img + ".png"} alt=""/>
                 </div>
                 <div className={s.description}>{product.producer} {product.model}</div>
             </Link>
