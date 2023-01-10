@@ -10,7 +10,9 @@ const getInstance = () => {
 
     const instance = axios.create({
         //withCredentials: true,
-        baseURL: 'http://localhost:3000/',
+        //https://pacific-sea-60785.herokuapp.com/
+        //baseURL: 'http://localhost:3000/',
+        baseURL: 'https://pacific-sea-60785.herokuapp.com/',
         headers: {
             Authorization: Object.hasOwn(localStorage,'auth')? JSON.parse(localStorage.auth).token : undefined
         },
