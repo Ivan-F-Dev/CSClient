@@ -10,9 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cdfca2c-3953-42c5-a04e-d5c5bebb15aa" name="Default Changelist" comment="deployToHeroku2">
+    <list default="true" id="5cdfca2c-3953-42c5-a04e-d5c5bebb15aa" name="Default Changelist" comment="deployToHeroku3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,17 +49,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Home\projects\cs2_client_ts\src\assets" />
-      <recent name="C:\Users\Home\projects\cs2_client_ts\src\assets\images" />
-      <recent name="C:\Users\Home\projects\cs2_client_ts\src\types" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Home\projects\cs2_client_ts" />
       <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Others\Modal" />
       <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Others\Hint" />
       <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Profile\ConfirmExit" />
       <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Profile\OrdersHistory" />
-      <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Profile" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Home\projects\cs2_client_ts\src\assets" />
+      <recent name="C:\Users\Home\projects\cs2_client_ts\src\assets\images" />
+      <recent name="C:\Users\Home\projects\cs2_client_ts\src\types" />
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
@@ -142,7 +142,7 @@
       <workItem from="1673155196743" duration="17251000" />
       <workItem from="1673245014867" duration="9844000" />
       <workItem from="1673333575792" duration="592000" />
-      <workItem from="1673340137553" duration="4257000" />
+      <workItem from="1673340137553" duration="4843000" />
     </task>
     <task id="LOCAL-00001" summary="fixed">
       <created>1672223593681</created>
@@ -179,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673352124749</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="deployToHeroku3">
+      <created>1673352986516</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673352986516</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +208,8 @@
     <MESSAGE value="fixed" />
     <MESSAGE value="deployToHeroku" />
     <MESSAGE value="deployToHeroku2" />
-    <option name="LAST_COMMIT_MESSAGE" value="deployToHeroku2" />
+    <MESSAGE value="deployToHeroku3" />
+    <option name="LAST_COMMIT_MESSAGE" value="deployToHeroku3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="601" y="245" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1672389676194">
