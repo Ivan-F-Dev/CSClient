@@ -12,6 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5cdfca2c-3953-42c5-a04e-d5c5bebb15aa" name="Default Changelist" comment="deployToHeroku2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cs2_server_ts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -61,7 +62,17 @@
       <recent name="C:\Users\Home\projects\cs2_client_ts\src\components\Profile" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -74,6 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -130,7 +142,7 @@
       <workItem from="1673155196743" duration="17251000" />
       <workItem from="1673245014867" duration="9844000" />
       <workItem from="1673333575792" duration="592000" />
-      <workItem from="1673340137553" duration="3402000" />
+      <workItem from="1673340137553" duration="4257000" />
     </task>
     <task id="LOCAL-00001" summary="fixed">
       <created>1672223593681</created>
@@ -160,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673351639492</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="deployToHeroku2">
+      <created>1673352124749</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673352124749</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,26 +220,30 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="297" y="242" width="941" height="349" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1536.834@0.0.1536.834" timestamp="1673074286525" />
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1673352419193">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1673352419193" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1673340150657">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1673340150657" />
-    <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1673245213812">
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1673352903983">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1673245213812" />
-    <state width="1515" height="213" key="GridCell.Tab.0.center" timestamp="1673245213812">
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1673352903983" />
+    <state width="1515" height="213" key="GridCell.Tab.0.center" timestamp="1673352903983">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1673245213812" />
-    <state width="1515" height="213" key="GridCell.Tab.0.left" timestamp="1673245213812">
+    <state width="1515" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1673352903983" />
+    <state width="1515" height="213" key="GridCell.Tab.0.left" timestamp="1673352903982">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1673245213812" />
-    <state width="1515" height="213" key="GridCell.Tab.0.right" timestamp="1673245213812">
+    <state width="1515" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1673352903982" />
+    <state width="1515" height="213" key="GridCell.Tab.0.right" timestamp="1673352903983">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1673245213812" />
+    <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1673352903983" />
     <state x="277" y="62" width="1214" height="707" key="SettingsEditor" timestamp="1672744894946">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
