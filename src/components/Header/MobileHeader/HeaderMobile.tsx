@@ -5,7 +5,7 @@ import menuIco from "./../../../assets/images/menu_ico.svg";
 import HeaderButton from "./HeaderButton/HeaderButton";
 import InputHeader from "../../Others/Input/InputHeader";
 import {Link} from "react-router-dom";
-import Hint from "../../Others/Hint/Hint";
+import HintNumber from "../../Others/Hint/HintNumber";
 import {useSelector} from "react-redux";
 import {Store} from "../../../store/store";
 
@@ -21,11 +21,11 @@ const HeaderMobile:FC = () => {
                 <div className={s.topBox}>
                     <div className={s.ButtonsWrapper}>
                         <Link className={s.link} to="/profile/contactData">
-                            <Hint radius={8} boolType={true} max={1} right={3} top={3} children={auth?1:2}/>
+                            <HintNumber radius={8} boolType={true} max={1} right={3} top={3} children={auth?1:2}/>
                             <HeaderButton path='person'/>
                         </Link>
                         <Link className={s.link} to="/compare">
-                            <Hint max={4} right={3} top={3} children={mainPage.countOfCompareProds}/>
+                            <HintNumber max={4} right={3} top={3} children={mainPage.countOfCompareProds}/>
                             <HeaderButton path='bar_chart'/>
                         </Link>
                     </div>
@@ -34,11 +34,11 @@ const HeaderMobile:FC = () => {
                     </Link>
                     <div className={s.ButtonsWrapper}>
                         <Link className={s.link} to="/favorites">
-                            <Hint right={3} top={3} children={mainPage.countOfFavoriteProds}/>
+                            <HintNumber right={3} top={3} children={mainPage.countOfFavoriteProds}/>
                             <HeaderButton path='favorite'/>
                         </Link>
                         <Link className={s.link} to="/basket">
-                            <Hint right={3} top={3} children={mainPage.countOfBasketProds}/>
+                            <HintNumber right={3} top={3} children={mainPage.countOfBasketProds}/>
                             <HeaderButton path='shopping_cart'/>
                         </Link>
                     </div>

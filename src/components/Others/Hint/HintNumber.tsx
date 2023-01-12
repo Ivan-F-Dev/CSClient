@@ -1,5 +1,5 @@
 import React, {FC, ReactNode} from 'react'
-import s from './Hint.module.scss'
+import s from './HintNumber.module.scss'
 
 interface Props {
     children?: ReactNode
@@ -15,7 +15,7 @@ interface Props {
 
 
 
-const Hint: FC<Props> = ({children=0,radius=11,top,left,right,bottom,lineHeight,max,boolType}) => {
+const HintNumber: FC<Props> = ({children=0,radius=11,top,left,right,bottom,lineHeight,max,boolType}) => {
 
     let size = radius*2+"px"
     let borderR = radius+'px'
@@ -33,4 +33,4 @@ const Hint: FC<Props> = ({children=0,radius=11,top,left,right,bottom,lineHeight,
      )
     }
 
-export default Hint
+export default HintNumber

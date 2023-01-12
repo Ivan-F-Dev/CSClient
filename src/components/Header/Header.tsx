@@ -5,7 +5,7 @@ import HeaderLinks from "./HeaderLinks/HeaderLinks";
 import img from "./../../assets/images/titleFine.png";
 import ButtonHeader from "../Others/Button/ButtonHeader";
 import InputHeader from "../Others/Input/InputHeader";
-import Hint from "../Others/Hint/Hint";
+import HintNumber from "../Others/Hint/HintNumber";
 import {useDispatch, useSelector} from "react-redux";
 import {Store} from "../../store/store";
 import {Dispatch} from "redux";
@@ -38,19 +38,19 @@ const Header = () => {
                     </div>
                     <div className={s.buttonsContainer}>
                         <Link className={s.link} to="/profile/contactData">
-                            <Hint radius={8} boolType={true} max={1} right={3} top={3} children={auth?1:2}/>
+                            <HintNumber radius={8} boolType={true} max={1} right={3} top={3} children={auth?1:2}/>
                             <ButtonHeader imgPath='person' text='Профиль'/>
                         </Link>
                         <Link className={s.link} to="/compare">
-                            <Hint max={4} right={3} top={3} children={mainPage.countOfCompareProds}/>
+                            <HintNumber max={4} right={3} top={3} children={mainPage.countOfCompareProds}/>
                             <ButtonHeader imgPath='bar_chart' text='Сравнение'/>
                         </Link>
                         <Link className={s.link} to="/favorites">
-                            <Hint right={3} top={3} children={mainPage.countOfFavoriteProds}/>
+                            <HintNumber right={3} top={3} children={mainPage.countOfFavoriteProds}/>
                             <ButtonHeader imgPath='favorite' text='Избранное'/>
                         </Link>
                         <Link className={s.link} to="/basket">
-                            <Hint right={3} top={3} children={mainPage.countOfBasketProds}/>
+                            <HintNumber right={3} top={3} children={mainPage.countOfBasketProds}/>
                             <ButtonHeader imgPath='shopping_cart' text='Корзина'/>
                         </Link>
                     </div>

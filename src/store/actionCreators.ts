@@ -1,7 +1,7 @@
 import {
     ADD_CATS,
     ADD_PRODS,
-    CHANGE_CAT,
+    CHANGE_CAT, SET_ERROR,
     SET_FAVORITE,
     SET_IS_AUTH, SET_ORDERS,
     SET_PROD,
@@ -80,6 +80,13 @@ export type setIsAuthAction = {
     payload:boolean
 }
 export const setIsAuth = (payload:boolean):setIsAuthAction => ({type: SET_IS_AUTH, payload})
+
+
+export type setErrorAction = {
+    type: typeof SET_ERROR
+    payload:string
+}
+export const setError = (payload:string):setErrorAction => ({type: SET_ERROR, payload})
 
 export type waitingOffAction = {
     type: typeof WAITING_OFF

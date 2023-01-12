@@ -1,7 +1,7 @@
 import {API, Payload, TError} from "../utils/API";
 import {
     addCats,
-    addProds,
+    addProds, setError,
     setIsAuth,
     setOrders,
     setProd,
@@ -36,15 +36,18 @@ export const TCLoadMainPage = (category:CategoriesNameEnum):ActionT<mainPageRedu
 }
 export const TCAuthReg = (payload:payloadForReg):ActionT<authReducerAction> => async (dispatch) => {
     dispatch(waitingOn())
-
-    const data = await API.registration(payload)
-    console.log('log from createThunk_authReg',data)
+    dispatch(setError(''))
+    const registration = await API.registration(payload)
+    if (registration.status !== 200) {
+        dispatch(setError(registration.data.message))
+    }
+    console.log('log from createThunk_authReg',registration.data)
 
     dispatch(waitingOff())
 }
 export const TCAuthLog = (payload:payloadForLog):ActionT<authReducerAction> => async (dispatch) => {
     dispatch(waitingOn())
-
+    dispatch(setError(''))
     const login = await API.login(payload)
 
     if (login.status === 200) {
@@ -57,6 +60,7 @@ export const TCAuthLog = (payload:payloadForLog):ActionT<authReducerAction> => a
         dispatch(setUser(login.data.user))
         console.log('log from createThunk_authLog',login)
     } else {
+        dispatch(setError(login.data.message))
         console.log("Error in TCAuthLog (login)")
     }
 

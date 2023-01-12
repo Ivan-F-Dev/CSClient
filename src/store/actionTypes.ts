@@ -10,5 +10,6 @@ export const ADD_CATS = 'ADD_CATS'
 export const SET_ORDERS = "SET_ORDERS"
 export const SET_USER = "SET_USER"
 export const SET_IS_AUTH = "SET_IS_AUTH"
+export const SET_ERROR = "SET_ERROR"
 export const WAITING_OFF = "WAITING_OFF"
 export const WAITING_ON = "WAITING_ON"
