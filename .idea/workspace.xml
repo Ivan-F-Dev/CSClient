@@ -10,28 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cdfca2c-3953-42c5-a04e-d5c5bebb15aa" name="Default Changelist" comment="deployToHeroku6">
-      <change afterPath="$PROJECT_DIR$/src/components/Others/Hint/HintString.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Others/Hint/HintString.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Others/Hooks/useInput.ts" afterDir="false" />
+    <list default="true" id="5cdfca2c-3953-42c5-a04e-d5c5bebb15aa" name="Default Changelist" comment="deployToHeroku1.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Auth/Auth.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/Auth.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Auth/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/Auth.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/MobileHeader/HeaderMobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/MobileHeader/HeaderMobile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Others/Button/ButtonFill.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/Button/ButtonFill.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Others/Hint/Hint.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/Hint/HintNumber.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Others/Hint/Hint.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/Hint/HintNumber.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Others/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/Input/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Others/Hooks/useInput.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/Hooks/useInput.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Product.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ContactData/ContactData.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ContactData/ContactData.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ContactData/ContactData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ContactData/ContactData.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actionCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actionCreators.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actionTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actionTypes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/authReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/authReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/thunkCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/thunkCreators.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/API.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/API.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +163,8 @@
       <workItem from="1673371066594" duration="1175000" />
       <workItem from="1673439547669" duration="2047000" />
       <workItem from="1673503249276" duration="632000" />
-      <workItem from="1673504546186" duration="29381000" />
+      <workItem from="1673504546186" duration="31735000" />
+      <workItem from="1673586315008" duration="2551000" />
     </task>
     <task id="LOCAL-00001" summary="fixed">
       <created>1672223593681</created>
@@ -243,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673355771114</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="deployToHeroku1.1">
+      <created>1673543534575</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673543534575</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +262,8 @@
     <MESSAGE value="deployToHeroku4" />
     <MESSAGE value="deployToHeroku5" />
     <MESSAGE value="deployToHeroku6" />
-    <option name="LAST_COMMIT_MESSAGE" value="deployToHeroku6" />
+    <MESSAGE value="deployToHeroku1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="deployToHeroku1.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="601" y="245" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1672389676194">
@@ -296,22 +290,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1673530471603" />
-    <state width="1515" height="211" key="GridCell.Tab.0.bottom" timestamp="1673533124369">
+    <state width="1515" height="211" key="GridCell.Tab.0.bottom" timestamp="1673586380664">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="211" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1673533124369" />
-    <state width="1515" height="211" key="GridCell.Tab.0.center" timestamp="1673533124369">
+    <state width="1515" height="211" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1673586380664" />
+    <state width="1515" height="211" key="GridCell.Tab.0.center" timestamp="1673586380664">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="211" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1673533124369" />
-    <state width="1515" height="211" key="GridCell.Tab.0.left" timestamp="1673533124369">
+    <state width="1515" height="211" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1673586380664" />
+    <state width="1515" height="211" key="GridCell.Tab.0.left" timestamp="1673586380664">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="211" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1673533124369" />
-    <state width="1515" height="211" key="GridCell.Tab.0.right" timestamp="1673533124369">
+    <state width="1515" height="211" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1673586380664" />
+    <state width="1515" height="211" key="GridCell.Tab.0.right" timestamp="1673586380664">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="211" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1673533124369" />
+    <state width="1515" height="211" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1673586380664" />
     <state x="277" y="62" width="1214" height="707" key="SettingsEditor" timestamp="1672744894946">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

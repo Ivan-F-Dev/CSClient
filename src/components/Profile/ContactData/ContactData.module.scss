@@ -7,7 +7,20 @@
     font-weight: 500;
   }
   .buttonWrapper {
+    position: relative;
     padding-top: 20px;
+
+    .warning {
+      position: absolute;
+      padding: 8.5px 14px;
+      bottom: 0px;
+      left: 206px;
+
+      width: fit-content;
+      transition: 1s;
+      color: white;
+      background-color: #ec6a09;
+    }
   }
 }
 

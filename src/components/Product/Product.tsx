@@ -81,8 +81,8 @@ const Product:FC<ProductProps> = ({scroll}) => {
                             {product.toCompare ? " В сравнении": " В сравнение"}
                         </div>
                     </div>
-                    <div style={{color:'red'}} className={s.rightItem}>
-                        <span>арт.</span> 14980
+                    <div className={s.rightItem}>
+                        <span>ост.</span> {product.count}
                     </div>
                 </div>
                 <div className={s.mainContent}>

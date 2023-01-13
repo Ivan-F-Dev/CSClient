@@ -50,7 +50,6 @@ const Auth = () => {
         if (error) {
             setTimeout(() => setWarning(false),2000)
             setWarning(true)
-            //alert("ошибка onReg")
         } else {
             await dispatch(TCAuthReg({login:login.value,password:password.value,dateOfBirth,name:name.value,surname:surname.value}))
         }
@@ -59,7 +58,6 @@ const Auth = () => {
         if (error) {
             setTimeout(() => setWarning(false),2000)
             setWarning(true)
-            //alert("ошибка onLog")
         } else {
             await dispatch(TCAuthLog({login:login.value,password:password.value}))
         }
