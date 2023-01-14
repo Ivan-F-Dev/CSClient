@@ -10,7 +10,6 @@ const relationCatTitle = {
     smartphones:'Смартфон'
 }
 
-
 export const getProductTitle = (catName:CategoriesNameEnum):string => {
     return relationCatTitle[catName]
 }

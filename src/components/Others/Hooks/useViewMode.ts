@@ -2,7 +2,6 @@ import {useEffect, useState} from 'react';
 
 export function useViewMode() {
 
-
     const [isDesktop,setIsDesktop] = useState(true)
 
     const resizeListener = () => {

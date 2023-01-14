@@ -2,15 +2,11 @@ import axios from "axios";
 import {CategoriesNameEnum} from "../types/Enums";
 import {CategoryEntity, OrderEntity, OrderItem, ProductEntity, UserEntity} from "../types/Entities";
 import {payloadForLog, payloadForReg} from "../types/Payload";
-import {log} from "util";
-
-
 
 const getInstance = () => {
 
     const instance = axios.create({
         //withCredentials: true,
-        //https://pacific-sea-60785.herokuapp.com/
         //baseURL: 'http://localhost:3000/',
         baseURL: 'https://pacific-sea-60785.herokuapp.com/',
         headers: {

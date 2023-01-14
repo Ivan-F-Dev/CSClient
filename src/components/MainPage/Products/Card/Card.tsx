@@ -44,7 +44,6 @@ const Card:FC<CardProps> = ({product}) => {
         <div key={product.id} className={s.Card}>
             <Link className={s.wrapperLink} to={`/product/${product.id}/${product.category}`}>
                 <div className={s.photo}>
-                    {/*<img src={"http://localhost:3000/images/products/" + product.img + ".png"} alt=""/>*/}
                     <img src={config.mainUrl + "images/products/" + product.img + ".png"} alt=""/>
                 </div>
                 <div className={s.description}>{product.producer} {product.model}</div>

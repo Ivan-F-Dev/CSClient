@@ -14,9 +14,7 @@ const Favorites:FC = () => {
     const prods = useSelector((state:Store) => state.mainPage.prods)
     const favProds = getProdsBCF(prods,'favorite')
 
-//slider
     const slider = useSlider(favProds)
-//slider
 
     return (
         <div className={s.Favorites}>

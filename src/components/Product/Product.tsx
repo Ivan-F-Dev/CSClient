@@ -21,10 +21,6 @@ const iconSize = {
     width:'22px'
 }
 
-const catName = {
-    smartphones:'Смартфон'
-}
-
 interface ProductProps {
     scroll: RefObject<HTMLDivElement>
 }
@@ -39,8 +35,7 @@ const Product:FC<ProductProps> = ({scroll}) => {
 
     const {id,cat} = useParams()
 
-    //const curCat = useSelector((state:Store) => state.mainPage.currentCategory)
-    const category:CategoriesNameEnum = cat  as CategoriesNameEnum// || curCat
+    const category:CategoriesNameEnum = cat  as CategoriesNameEnum
     const product = useSelector((state:Store) => state.mainPage.prods)[category].find(el => el.id === id)// as SmartphoneEntity
 
     const dispatch = useDispatch<Dispatch<any>>()

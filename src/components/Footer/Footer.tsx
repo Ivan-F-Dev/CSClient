@@ -8,8 +8,6 @@ import yt from './../../assets/images/foot_yt.png'
 
 const Footer:FC = () => {
 
-
-
     return (
         <footer className={s.Footer}>
             <div className={s.mainContainer}>

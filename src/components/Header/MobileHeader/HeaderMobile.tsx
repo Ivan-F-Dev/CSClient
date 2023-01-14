@@ -49,14 +49,6 @@ const HeaderMobile:FC = () => {
                     </div>
                     <InputHeader width="calc(100% - 36px)" value={input} setValue={setInput}/>
                 </div>
-                {/*{links.length > 0*/}
-                {/*    ? (*/}
-                {/*        <div className={s.bottomBox}>*/}
-                {/*            <HeaderLinks links={links}/>*/}
-                {/*        </div>*/}
-                {/*    )*/}
-                {/*    : null*/}
-                {/*}*/}
             </div>
         </header>
     );

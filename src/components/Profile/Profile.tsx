@@ -1,20 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './Profile.module.scss';
 import {useSelector} from "react-redux";
 import {Store} from "../../store/store";
-import {Link, Navigate, NavLink, Route, Routes} from 'react-router-dom'
-
+import {Link, Navigate, Route, Routes} from 'react-router-dom'
 import ContactData from "./ContactData/ContactData";
 import OrdersHistory from "./OrdersHistory/OrdersHistory";
 import ConfirmExit from "./ConfirmExit/ConfirmExit";
 
-
 const Profile = () => {
 
-    // useEffect(() => {
-    //
-    // },[])
-    const [activeLink,setActiveLink] = useState(1)
     const auth = useSelector((state:Store) => state.auth)
 
     return (

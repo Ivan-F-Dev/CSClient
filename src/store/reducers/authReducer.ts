@@ -9,9 +9,7 @@ import {
 } from "../actionCreators";
 import {OrderEntity, UserEntity} from "../../types/Entities";
 
-//INITIAL STATE FOR REDUCER
-
-
+//INITIAL STATE
 export type authReducerAction = setIsAuthAction|waitingOffAction|waitingOnAction|setUserAction|setOrdersAction|setErrorAction
 
 export type StateAuthReducer = {
@@ -29,8 +27,6 @@ const initialState:StateAuthReducer = {
     user: null,
     orders: []
 }
-
-
 
 //REDUCER
 export let authReducer = (state:StateAuthReducer = initialState, action:authReducerAction):StateAuthReducer => {

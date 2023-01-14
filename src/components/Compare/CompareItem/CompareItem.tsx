@@ -14,7 +14,6 @@ interface CompareItemProps {
 }
 
 const CompareItem:FC<CompareItemProps> = ({product}) => {
-    //console.log(itemWidth.current.getBoundingClientRect())//ref
     const dispatch = useDispatch<Dispatch<any>>()
 
     const setCompare = () => {

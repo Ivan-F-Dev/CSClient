@@ -1,6 +1,5 @@
 import React, {FC} from "react";
 import s from "./HeaderButton.module.scss";
-//import img from '../../../../assets/images/bar_chart.svg';
 
 interface HeaderButtonProps {
     path: string

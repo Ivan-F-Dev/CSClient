@@ -12,7 +12,6 @@ interface HeaderLinksProps {
 
 const HeaderLinks:FC<HeaderLinksProps> = ({links,dispatch}) => {
 
-
     const onClick = (newCat:CategoriesNameEnum) => {
         dispatch(changeCat(newCat))
     }

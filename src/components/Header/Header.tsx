@@ -12,7 +12,6 @@ import {Dispatch} from "redux";
 
 const Header = () => {
 
-    const [links, setLinks] = useState(['Смартфоны и планшеты','Ноутбуки, планшеты и компьютеры','Техника для дома','Игры и развлечения','Фото и видеотехника'])
     const [input,setInput] = useState('')
 
     const dispatch = useDispatch<Dispatch<any>>()

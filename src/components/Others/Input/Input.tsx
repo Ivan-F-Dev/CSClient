@@ -12,7 +12,6 @@ interface InputProps {
 
 const Input:FC<InputProps> = React.memo(({title,value, onChange,onBlur, type, width}) => {
 
-
     return (
         <div className={s.inputWrapper}>
             {title ? <h5 className={s.title}>{title}</h5>: null}

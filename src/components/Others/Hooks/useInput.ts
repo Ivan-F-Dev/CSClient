@@ -1,5 +1,4 @@
 import React, {useCallback, useEffect, useState} from "react";
-import HintString from "../Hint/HintString";
 
 interface IUseInputReturn {
     value:string,
@@ -23,7 +22,6 @@ interface IUseValidationReturn {
     minLengthError?: boolean
     maxLengthError?: boolean
     inputValid: boolean
-    // errorsSet:Array<string>
     errors:Array<string>
 }
 

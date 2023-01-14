@@ -12,15 +12,13 @@ import {
 } from "../actionCreators";
 import {CategoriesNameEnum} from "../../types/Enums";
 
-//INITIAL STATE FOR REDUCER
-
+//INITIAL STATE
 export type mainPageReducerAction = addProdsAction | setProdAction | addCatsAction | setIsAuthAction | changeCatAction | setFavoriteAction | setToCompareAction | setToBasketAction
 
 const initialState = {
-    //currentCategory: '' as CategoriesNameEnum,
     currentCategory: CategoriesNameEnum.smartphones,
     cats: [] as Array<CategoryEntity>,
-    prods: {} as Record<CategoriesNameEnum, Array<ProductEntityClient>>,//[] as Array<ProductEntityClient>
+    prods: {} as Record<CategoriesNameEnum, Array<ProductEntityClient>>,
     countOfCompareProds: 0,
     countOfFavoriteProds: 0,
     countOfBasketProds: 0

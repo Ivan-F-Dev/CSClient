@@ -13,7 +13,6 @@ export const getProdsBCF = (prods:Record<CategoriesNameEnum, Array<ProductEntity
     return result
 }
 
-// export const getProdsById = (prods:Record<CategoriesNameEnum, Array<ProductEntityClient>>, Arr:Array<OrderItem>):Array<ProductEntityClient> => {
 export const getProdsById = (Arr:Array<OrderItem>): { result:Array<ProductEntityClient>,supArr:Array<OrderItemWithPrice> }  => {
 
     const prods = store.getState().mainPage.prods

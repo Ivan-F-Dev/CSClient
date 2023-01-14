@@ -13,7 +13,6 @@ const FooterMobile:FC = () => {
     const [activeArrows,setActiveArrows] = useState({1: false, 2: false, 3: false})
 
     const toggleList = (e:React.MouseEvent<HTMLElement,MouseEvent>,index:'1'|'2'|'3') => {
-        //setActiveArrows(prev => ({...prev, [index]: !prev[index]}))
         setActiveArrows({...activeArrows, [index]: !activeArrows[index]})
 
         let list = document.getElementById(`footerList_${index}`)

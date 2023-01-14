@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './ConfirmExit.module.scss';
 import ButtonFill from "../../Others/Button/ButtonFill";
-import {TCAuthLog, TCAuthLogout} from "../../../store/thunkCreators";
+import {TCAuthLogout} from "../../../store/thunkCreators";
 import {useDispatch} from "react-redux";
 import {Dispatch} from "redux";
 
@@ -11,7 +11,6 @@ const ConfirmExit = () => {
     const onLogout = () => {
         dispatch(TCAuthLogout())
     }
-
 
     return (
         <div className={s.ConfirmExit}>

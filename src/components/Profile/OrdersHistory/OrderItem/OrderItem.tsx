@@ -16,7 +16,6 @@ const OrderItem: FC<Props> = ({order,sum}) => {
       <div className={s.column}>{date}</div>
       <div className={s.column}><span className={s.id}>{order.id}</span></div>
       <div className={s.column}>Принят</div>
-      {/*<div className={s.column}>Не оплачен</div>*/}
       <div className={s.column}>{sum}</div>
   </div>
  )

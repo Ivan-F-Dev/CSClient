@@ -1,4 +1,4 @@
-import {useEffect, useLayoutEffect, useRef, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import {ProductEntityClient} from "../../../types/Entities";
 
 export function useSlider(favProds: ProductEntityClient[]) {

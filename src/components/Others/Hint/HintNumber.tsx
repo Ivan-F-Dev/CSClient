@@ -13,8 +13,6 @@ interface Props {
     boolType?: boolean
 };
 
-
-
 const HintNumber: FC<Props> = ({children=0,radius=11,top,left,right,bottom,lineHeight,max,boolType}) => {
 
     let size = radius*2+"px"

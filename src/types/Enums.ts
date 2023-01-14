@@ -3,16 +3,6 @@ export enum RolesEnum {
     ADMIN='ADMIN'
 }
 
-// export enum ProdPrefixEnum {
-//     videoCameras='vc',
-//     gameStations='gs',
-//     televisors='tv',
-//     pads='pd',
-//     laptops='lt',
-//     photoVideo='pv',
-//     smartphones='ph'
-// }
-
 export enum CategoriesNameEnum {
     videoCameras='videoCameras',
     gameStations='gameStations',
@@ -55,4 +45,3 @@ export enum ProductEntityPropsRu {
 export type indexesOfProductEntityPropsRu = "id"|"category"|"producer"|"model"|"price"|"img"|"count"|"color"|"rom"|"ram"|"displayType"|"displaySize"|"CPU"| "GPU"
     | "mainCam"| "frontCam"| "interfaces"| "weight"| "screenResolution"| "aspectRatio"| "matrixType"| "videoRecordingQuality"| "frameRate"
     |"toCompare"|"toBasket"|"favorite"
-//export type propNames = 'color'|'rom'|'ram'|'displayType'|'displaySize'|'rom'|'rom'|'rom'|'rom'|'rom'

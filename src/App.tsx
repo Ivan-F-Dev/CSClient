@@ -32,13 +32,10 @@ const App:FC = () => {
         }
     },[])
 
-
-
     return (
             <div ref={app} className={s.App}>
                 {isDesktop ? <Header/> : <HeaderMobile/>}
             <main>
-                {/*<button onClick={mainHeightControl}>control</button>*/}
                 <Routes>
                     <Route path='/' element={<MainPage/>}/>
                     <Route path='/profile/*' element={<Profile/>}/>

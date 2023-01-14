@@ -29,9 +29,6 @@ export type OrderItem = {
     buyCount: number
 }
 
-
-
-
 export interface ProductEntity  {
     id: string
     category: CategoriesNameEnum

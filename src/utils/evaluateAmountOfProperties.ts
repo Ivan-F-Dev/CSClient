@@ -27,9 +27,6 @@ export const evaluateAmountOfProperties = (prodsArr:Array<ProductEntityClient>):
         supportSet.delete('favorite')
         supportArr = Array.from(supportSet)
 
-
-//export type propNames = keyof ProductEntityPropsRu
-
         resultArr = supportArr.map( (value) => ProductEntityPropsRu[value] )
 
         return {resultArr,supportArr}

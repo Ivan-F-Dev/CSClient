@@ -40,7 +40,6 @@ const OrdersHistory = () => {
                     <div className={s.column}>Дата оформления</div>
                     <div className={s.column}>Номер заказа</div>
                     <div className={s.column}>Статус</div>
-                    {/*<div className={s.column}>Оплата</div>*/}
                     <div className={s.column}>Сумма заказа</div>
                 </div>
                 {orderItems}

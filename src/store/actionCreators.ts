@@ -62,7 +62,9 @@ export type addCatsAction = {
     payload: Array<CategoryEntity>
 }
 export const addCats = (payload:Array<CategoryEntity>):addCatsAction => ({type: ADD_CATS, payload: payload})
+
 //authPageReducer
+
 export type setOrdersAction = {
     type: typeof SET_ORDERS
     payload: Array<OrderEntity>
@@ -80,7 +82,6 @@ export type setIsAuthAction = {
     payload:boolean
 }
 export const setIsAuth = (payload:boolean):setIsAuthAction => ({type: SET_IS_AUTH, payload})
-
 
 export type setErrorAction = {
     type: typeof SET_ERROR

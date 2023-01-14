@@ -17,7 +17,6 @@ const MainPage:FC = () => {
 
     const setCurCat = (newCat: CategoriesNameEnum) => {
         dispatch(changeCat(newCat))
-        // return undefined
     }
 
     useEffect( () => {

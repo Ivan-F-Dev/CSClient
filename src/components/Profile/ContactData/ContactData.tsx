@@ -6,7 +6,6 @@ import {Store} from "../../../store/store";
 import ButtonFill from "../../Others/Button/ButtonFill";
 import {useInput} from "../../Others/Hooks/useInput";
 import HintString from "../../Others/Hint/HintString";
-import {TCAuthLog} from "../../../store/thunkCreators";
 
 const ContactData = () => {
 
@@ -25,7 +24,6 @@ const ContactData = () => {
             setWarning(true)
         } else {
             alert("submit ok")
-            //await dispatch(TCAuthLog({login:login.value,password:password.value}))
         }
     },[])
 

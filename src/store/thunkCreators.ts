@@ -15,7 +15,7 @@ import {ActionT} from "../types/Redux";
 import {CategoriesNameEnum} from "../types/Enums";
 import {authReducerAction} from "./reducers/authReducer";
 import {payloadForLog, payloadForReg} from "../types/Payload";
-import {OrderEntity, OrderItem, ProductEntityClient, UserEntity} from "../types/Entities";
+import {OrderItem, ProductEntityClient} from "../types/Entities";
 
 export const TCLoadMainPage = (category:CategoriesNameEnum):ActionT<mainPageReducerAction> => async (dispatch) => {
 
@@ -27,10 +27,9 @@ export const TCLoadMainPage = (category:CategoriesNameEnum):ActionT<mainPageRedu
         return
     }
     data = data as unknown as Payload
-    //
+
     const prodsForClient:Array<ProductEntityClient> = data.prods.map( (value):ProductEntityClient => ({...value, toCompare:false,toBasket:false,favorite:false}))
-    //
-    console.log("LOAD",category)
+
     dispatch(addProds(prodsForClient))
     dispatch(addCats(data.cats))
 }
@@ -89,8 +88,6 @@ export const TCAuthLogout = ():ActionT<authReducerAction> => async (dispatch) =>
 export const TCSendOrder = (order:Array<OrderItem>,basketProds:Array<ProductEntityClient>):ActionT<mainPageReducerAction | authReducerAction> => async (dispatch,getState) => {
 
     const res = await API.buy({order})
-    console.log("RESPONSE",res)
-    //if (res.status === 200) return
     const newProds = res.data.newProds
     for (let i = 0;i<basketProds.length;i++) {
         dispatch(setProd(basketProds[i].id,basketProds[i].category,newProds[i].count))
@@ -103,14 +100,6 @@ export const TCSendOrder = (order:Array<OrderItem>,basketProds:Array<ProductEnti
 
         if (orders.status === 200) {
             dispatch(setOrders(orders.data))
-        } else {
-            console.log("Error in TCSendOrder (orders)")
         }
-
-    } else {
-        console.log("Error in TCSendOrder (orders)__")
     }
-
-
-
 }

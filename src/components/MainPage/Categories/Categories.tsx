@@ -6,7 +6,7 @@ import {CategoriesNameEnum} from "../../../types/Enums";
 
 interface CategoriesProps {
     cats:Array<CategoryEntity>
-    setCurCat: (newCat: CategoriesNameEnum) => void//undefined
+    setCurCat: (newCat: CategoriesNameEnum) => void
 }
 
 const Categories:FC<CategoriesProps> = ({cats,setCurCat}) => {

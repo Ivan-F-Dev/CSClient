@@ -1,4 +1,4 @@
-import React, {ReactNode, useCallback, useEffect, useState} from "react";
+import React, {useCallback, useState} from "react";
 import s from './Auth.module.scss'
 import ButtonFill from "../Others/Button/ButtonFill";
 import Input from "../Others/Input/Input";
@@ -6,14 +6,11 @@ import ButtonText from "../Others/Button/ButtonText";
 import {useDispatch, useSelector} from "react-redux";
 import {Dispatch} from "redux";
 import {TCAuthLog, TCAuthReg} from "../../store/thunkCreators";
-import {Navigate,useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {Store} from "../../store/store";
 import {useInput} from "../Others/Hooks/useInput";
 import HintString from "../Others/Hint/HintString";
 import {setError} from "../../store/actionCreators";
-
-
-
 
 const Auth = () => {
 
@@ -22,9 +19,6 @@ const Auth = () => {
     const navigate = useNavigate()
     if (auth.isAuth) navigate("/profile/contactData")
 
-
-
-    //state
     const [mode,setMode] = useState(true)//log-true or reg-false
     const [warning,setWarning] = useState<boolean>(false)
     const login = useInput('',{minLength:6,maxLength:20,isEmpty:true})
@@ -32,9 +26,7 @@ const Auth = () => {
     const name = useInput('',{maxLength:20,isEmpty:true})
     const surname = useInput('',{maxLength:20,isEmpty:true})
     const [dateOfBirth, setDateOfBirth] = useState('')
-    //state
 
-    //
     const setModeFalse = useCallback(() => {
         dispatch(setError(''))
         setMode(false)
@@ -43,7 +35,6 @@ const Auth = () => {
         dispatch(setError(''))
         setMode(true)
     },[])
-    //
 
     const onReg = (error:boolean) => async () => {
         console.log(login.inputValid,password.inputValid, name.inputValid , surname.inputValid)

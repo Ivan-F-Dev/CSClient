@@ -13,8 +13,6 @@ interface Props {
     boolType?: boolean
 };
 
-
-
 const HintString: FC<Props> = ({children,top,left,right,bottom}) => {
 
      return (

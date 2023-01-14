@@ -47,7 +47,6 @@ const Basket:FC = () => {
         }
     }
 
-
     const redirect = () => {
         nav('/auth')
     }
