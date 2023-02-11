@@ -14,6 +14,8 @@ import {setError} from "../../store/actionCreators";
 
 const Auth = () => {
 
+    console.log('render')
+
     const dispatch = useDispatch<Dispatch<any>>()
     const auth = useSelector((state:Store) => state.auth)
     const navigate = useNavigate()
